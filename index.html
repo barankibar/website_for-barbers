@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <title>Barber Web Site</title>
+</head>
+
+
+<body>
+
+    <!-- BANNER -->
+
+    <section id="banner">
+        <img src="/images/logo.png" alt="barber-shop" class="logo">
+        <div class="banner-text">
+            <h1> Hair Studio</h1>
+            <p>Style Your Hair Is Style Your Life </p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SIDE NAVIGATOR -->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="/images/menu.png" alt="menu" id="menu">
+    </div>
+
+    <!-- FEATURES -->
+    <section id="feature">
+        <div class="tittle-text">
+            <p>FEATURES</p>
+            <h2>Why Choose Us</h2>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h3>Experienced Staff</h3>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt incidunt dolor quae illo autem earum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features">
+                <h3>Pre Booking Online
+                </h3>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-inr"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam impedit culpa, ducimus animi quibusdam illo totam? Exercitationem maxime eligendi quas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features">
+                <h3>Affordable Cost</h3>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, molestias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="/images/barber-man.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- SIDE NAVIGATOR MENU BUTTON -->
+<script>
+    var menuBtn = document.getElementById("menuBtn");
+    var menu = document.getElementById("menu");
+    var sideNav = document.getElementById("sideNav");
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "0px"){
+            sideNav.style.right = "-300px";
+            menu.src = "/images/menu.png";
+        } 
+        else{
+            sideNav.style.right = "0px";
+            menu.src = "/images/close.png";
+        }
+        menu.style.transitionDuration = "1s";
+    }
+</script>
+</body>
+</html>
